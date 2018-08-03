@@ -39,9 +39,9 @@ app.get('/about',(req,res)=>{
     });
 })
 
-app.get('/bad',(req, res)=>{
-    res.send({
-        errorMessgae:"this page is corrupted"
+app.get('/projects',(req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle:"projects Page"
     })
 })
 
